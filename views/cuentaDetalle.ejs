@@ -11,11 +11,11 @@
 
     <div class="seleccionaCuenta">Este es tu saldo actual</div>
 
-    <div class="bodyCuentas">
+    <div class="bodyCuentaDetalle">
       <% if (cuenta.n == null) { %> 
-        <div>La cuenta que busca no existe</div>
+        <div class="cuentaInexistente">La cuenta que busca no existe</div>
       <% } else { %>
-        <div class="cajaDeCuenta">
+        <div class="cuentaDetalle">
           <div>Saldo de la cuenta: <%= cuenta.saldo %></div>
           <div>Tipo de cuenta: 
             <% if (cuenta.tipo_letras == "CA") { %>
@@ -35,6 +35,8 @@
       <% } %>
     </div>
           
+    <%- include('partials/footer.ejs') %>  
+
   </body>
 
 </html>

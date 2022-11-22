@@ -1,5 +1,6 @@
 a {
   text-decoration: none; /* le saca el subrayado a todos los hipervinculos de etiqueta a */
+  color: white;
 } 
 * { 
   margin: 0;
@@ -15,6 +16,7 @@ body{
 }
 .bienvenido{
   font-size: xx-large;
+  font-weight: bold;
   margin-top: 5%;
   margin-bottom: 2%;
 }
@@ -44,6 +46,7 @@ body{
 .seleccionaCuenta{
   font-size: xx-large;
   margin-bottom: 2%;
+  font-weight: bold;
 }
 .bodyCuentas{
   text-align: center;
@@ -70,8 +73,33 @@ body{
 .cajaDeCuenta :hover{
   transform: translateY(0%);
 }
+.bodyCuentaDetalle{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(0, 0, 206);
+}
+.cuentaDetalle{
+  font-size: x-large;
+  text-align: start;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+.cuentaDetalle div{
+  padding: 15px;
+}
+.cuentaInexistente{
+  font-size: x-large;
+}
+hr{
+  margin-top: 5%;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(110, 110, 110);
+  border: rgb(216, 216, 216) solid;
+}
 .botonSalir{
-  margin-top: 3%;
+  margin-top: 2%;
   margin-bottom: 3%;
   text-align: left;
   margin-left: 3.5%;
