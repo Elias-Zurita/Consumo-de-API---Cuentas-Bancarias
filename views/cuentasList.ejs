@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include('partials/head.ejs') %>  <!--  Incluye el HEAD  -->  
+  
+  <body>
+
+    <%- include('partials/header.ejs') %>  <!--  Incluye el HEADER  -->
+    
+    <div class="consultaSaldo">Consulta de Saldo</div>
+
+    <div class="seleccionaCuenta">Selecciona la Cuenta a Consultar</div>
+
+    <div class="bodyCuentas">
+        <% cuentas.forEach(cuenta => { %> 
+          <a href="/cuentas/detalle/<%=cuenta.n%>">
+            <div class="cajaDeCuenta">
+              <div>
+                <% if (cuenta.tipo_letras == "CA") { %>
+                  <div>Caja de Ahorro</div>
+                <% } else if (cuenta.tipo_letras == "CC" || "Cc") { %>
+                  <div>Cuenta Corriente</div>
+                <% } %>
+              </div>
+              <div>Nro: <%= cuenta.n %></div>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    
+    <%- include('partials/footer.ejs') %>  
+
+  </body>
+
+</html>

@@ -1,0 +1,91 @@
+a {
+  text-decoration: none; /* le saca el subrayado a todos los hipervinculos de etiqueta a */
+} 
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suma posteriormente. */
+}
+body{
+  font-family: 'Exo 2',sans-serif;
+  text-align: center;
+} 
+.banner{
+  width: 100%;
+}
+.bienvenido{
+  font-size: xx-large;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.botonesIndex button a{
+  color: white;
+}
+.botonesIndex button a:hover{
+  color: black;
+}
+.botonesIndex button{
+  font-size: x-large;
+  margin: 1%;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: seagreen;
+}
+.botonesIndex :hover{
+  transition: all ease 1000ms;
+  transform: scale(1.2);
+}
+.consultaSaldo{
+  font-size: x-large;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.seleccionaCuenta{
+  font-size: xx-large;
+  margin-bottom: 2%;
+}
+.bodyCuentas{
+  text-align: center;
+}
+.bodyCuentas :hover{
+  cursor: pointer; /* mouse en modo hipervinculo */
+  transform: translateY(-5%); /* mueve la caja hacia arriba */
+  transition: 0.9s; /* para que la caja se desplaze suave hacia arriba */
+}
+.cajaDeCuenta{
+  color: white;
+  background-color: rgb(27, 211, 21);
+  font-weight: bold;
+  font-size: x-large;
+  display: flex;
+  display: inline-block; /* se ponen en horizontal respetando los tamaños que le paso */
+  justify-content: space-around;
+  width: 30%;  /* El ancho en % determinará la cantidad de articulos por fila */
+  height: auto;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 25px;
+}
+.cajaDeCuenta :hover{
+  transform: translateY(0%);
+}
+.botonSalir{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: left;
+  margin-left: 3.5%;
+}
+.botonSalir button{
+  font-size: x-large;
+  padding: 15px;
+  cursor: pointer; 
+  color: white;
+  background-color: rgb(27, 211, 21);
+  border-radius: 10px;
+  border: none;
+}
+.botonSalir :hover{
+  color: black;
+  transition: all ease 1000ms;
+}

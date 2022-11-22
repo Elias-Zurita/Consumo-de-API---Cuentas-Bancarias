@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include('partials/head.ejs') %>  <!--  Incluye el HEAD  -->  
+  
+  <body>
+
+    <%- include('partials/header.ejs') %>  <!--  Incluye el HEADER  -->
+    
+    <div class="consultaSaldo">Consulta de Saldo</div>
+
+    <div class="seleccionaCuenta">Este es tu saldo actual</div>
+
+    <div class="bodyCuentas">
+      <% if (cuenta.n == null) { %> 
+        <div>La cuenta que busca no existe</div>
+      <% } else { %>
+        <div class="cajaDeCuenta">
+          <div>Saldo de la cuenta: <%= cuenta.saldo %></div>
+          <div>Tipo de cuenta: 
+            <% if (cuenta.tipo_letras == "CA") { %>
+              Caja de Ahorro en 
+            <% } else if (cuenta.tipo_letras == "CC" || "Cc") { %>
+              Cuenta Corriente en %>
+            <% } %>
+            
+            <% if (cuenta.moneda == "u$s") { %>
+              Dólares
+            <% } else if (cuenta.moneda == "$") { %>
+              Pesos
+              <% } %> 
+          </div>
+          <div>Número de cuenta: <%= cuenta.n %></div>      
+        </div>
+      <% } %>
+    </div>
+          
+  </body>
+
+</html>
