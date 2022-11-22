@@ -11,7 +11,13 @@
 
     <div class="seleccionaCuenta">Selecciona la Cuenta a Consultar</div>
 
+    
     <div class="bodyCuentas">
+
+      <% if (prev != 0) { %>
+        <div class="cajaDeCuenta"><a href="/cuentas/list?page=<%=prev%>">Pagina anterior</a></div>
+      <% } %>
+
         <% cuentas.forEach(cuenta => { %> 
           <a href="/cuentas/detalle/<%=cuenta.n%>">
             <div class="cajaDeCuenta">
@@ -26,6 +32,11 @@
             </div>
           </a>
         <% }) %>
+
+      <% if (next != 0) { %>
+        <div class="cajaDeCuenta"><a href="/cuentas/list?page=<%=next%>">Siguiente pagina</a></div>
+      <% } %>
+
       </div>
     
     <%- include('partials/footer.ejs') %>  
