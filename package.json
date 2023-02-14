@@ -2,7 +2,7 @@
   "name": "challenge",
   "version": "0.0.0",
   
-
+  "main": "node ./bin/www",
   "engines": {
     "node": "14.x"
   },
