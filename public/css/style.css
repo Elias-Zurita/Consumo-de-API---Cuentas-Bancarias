@@ -82,7 +82,7 @@ body{
 .cuentaDetalle{
   font-size: x-large;
   text-align: start;
-  margin-top: 10%;
+  margin-top: 1%;
   margin-bottom: 15%;
 }
 .cuentaDetalle div{
@@ -116,4 +116,62 @@ hr{
 .botonSalir :hover{
   color: black;
   transition: all ease 1000ms;
+}
+
+/* Tablets */
+@media (max-width:700px){ 
+  .seleccionaCuenta{
+    font-size: large;
+  }
+  .cajaDeCuenta{
+    font-weight: bold;
+    font-size: large;
+    width: 40%;  /* El ancho en % determinará la cantidad de articulos por fila */
+  }
+}
+
+/* Smartphones */
+@media (max-width:480px){ 
+  .banner{
+    height: 45px;
+    width: 100%;
+  }
+  .bienvenido{
+    font-size: x-large;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .botonesIndex button{
+    font-size: large;
+    margin: 4%;
+  }
+  .consultaSaldo{
+    font-size: x-large;
+    margin-top: 7%;
+    margin-bottom: 4%;
+  }
+  .seleccionaCuenta{
+    font-size: x-large;
+  }
+  .cajaDeCuenta{
+    font-weight: bold;
+    font-size: large;
+    width: 80%;  /* El ancho en % determinará la cantidad de articulos por fila */
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 25px;
+  }
+  .botonSalir button{
+    font-size: large;
+  }
+  .bodyCuentaDetalle{
+    width: 90%;
+  }
+  .cuentaDetalle{
+    font-size: large;
+    text-align: start;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
 }
