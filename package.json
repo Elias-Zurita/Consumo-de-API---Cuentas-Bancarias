@@ -2,7 +2,7 @@
   "name": "challenge",
   "version": "0.0.0",
   
-  "main": "app.js",
+  "main": "index.js",
   "engines": {
     "node": "14.x"
   },
